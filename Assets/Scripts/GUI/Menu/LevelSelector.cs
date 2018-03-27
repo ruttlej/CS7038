@@ -116,9 +116,9 @@ public class LevelSelector : MonoBehaviour, IPan
         currentPage = LevelManager.instance.Level / (rowCount * columnCount);
         levelCount = LevelManager.instance.LevelCount;
         playerLevel = PlayerPrefs.GetInt("Level", 0);
-		#if !UNITY_EDITOR
-		#error Fix this before deployment
-		#endif
+		//#if !UNITY_EDITOR
+		//#error Fix this before deployment
+		//#endif
 		pagesCount = 3;
 		/*pagesCount =
             Mathf.Min(

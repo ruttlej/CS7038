@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Grouping;
 using System.Security.Permissions;
-using UnityEditor;
 using System;
 
 public class LaserEmitter : Entity
