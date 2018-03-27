@@ -35,19 +35,19 @@ public class VerticalGate : Gate
             _bottom.transform.position = transform.position;
             _bottom.transform.parent = transform;
             _botRenderer = _bottom.AddComponent<SpriteRenderer>();
-            _botRenderer.sharedMaterial = renderer.sharedMaterial;
+            _botRenderer.sharedMaterial = GetComponent<Renderer>().sharedMaterial;
             _botRenderer.sprite = GateOpenBot;
             _botRenderer.enabled = false;
 			_botRenderer.sortingOrder = LevelLoader.PlaceDepth(transform.position.y) + LevelLoader.UsableOffset;
 
-			(_botRenderer.renderer as SpriteRenderer).color = spriteRenderer.color;
+			(_botRenderer.GetComponent<Renderer>() as SpriteRenderer).color = spriteRenderer.color;
         }
     }
 
     protected override void Update() {
         base.Update();
 
-		renderer.sortingOrder = LevelLoader.PlaceDepth(transform.position.y) - LevelLoader.UsableOffset;
+		GetComponent<Renderer>().sortingOrder = LevelLoader.PlaceDepth(transform.position.y) - LevelLoader.UsableOffset;
         CreateBotPart();
 			//Entity.Place(transform.position.y - 1) - Entity.PlaceOffset + 1;
     }

@@ -53,7 +53,7 @@ public class BackgroundRenderer : MonoBehaviour
 		_tile = Material.Instantiate(_tile) as Material;
 		_funkySun = Material.Instantiate(_funkySun) as Material;
 		targetSunValue = sunValue = minSunValue;
-		renderer.material.SetFloat("Value", 0.8f);
+		GetComponent<Renderer>().material.SetFloat("Value", 0.8f);
 		AudioMenu.OnNextBeat += OnNextBeat;
 		_currentPivotY = _targetPivotY = pivotY;
 	}

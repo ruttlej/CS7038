@@ -11,10 +11,10 @@ public class BackgroundMiddle : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		renderer.sortingOrder = -1;
+		GetComponent<Renderer>().sortingOrder = -1;
 		GroupManager.main.group["Main Menu"].Add(this, new GroupDelegator(null,
-			() => {if (renderer != null) { renderer.enabled = true; }},
-			() => {if (renderer != null) { renderer.enabled = false; }}));
+			() => {if (GetComponent<Renderer>() != null) { GetComponent<Renderer>().enabled = true; }},
+			() => {if (GetComponent<Renderer>() != null) { GetComponent<Renderer>().enabled = false; }}));
 
 	}
 

@@ -83,7 +83,7 @@ public class DialogueMap
 			}
 			else if (!escape && line.StartsWith(InstanceChar)) {
 				if (currentEntries != null) {
-					map._instances[currentDialogue] = new DialogueInstance(currentEntries, manager.audio);
+					map._instances[currentDialogue] = new DialogueInstance(currentEntries, manager.GetComponent<UnityEngine.AudioSource>());
 				}
 				currentAuthor = null;
 				currentDialogue = line.Substring(1).Trim();
@@ -104,7 +104,7 @@ public class DialogueMap
 			}
 		}
 		if (currentEntries != null) {
-			map._instances[currentDialogue] = new DialogueInstance(currentEntries, manager.audio);
+			map._instances[currentDialogue] = new DialogueInstance(currentEntries, manager.GetComponent<UnityEngine.AudioSource>());
 		}
 
 		return map;

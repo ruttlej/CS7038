@@ -58,7 +58,7 @@ public class Patient : Switchable
 		                           new Vector3(transform.position.x + 0.25f, transform.position.y + 0.5f, transform.position.z),
 		                           new Quaternion()) as GameObject;
 		heart.transform.parent = transform.parent;
-		heart.renderer.sortingOrder = short.MaxValue;
+		heart.GetComponent<Renderer>().sortingOrder = short.MaxValue;
 		heart.SetActive(false);
 
 		ashes = Entity.Spawn(gameObject, ashes);
@@ -171,7 +171,7 @@ public class Patient : Switchable
 			//Entity.Replace(this.gameObject, ashes);
 		}
 			//animator.SetTrigger(reason == GameWorld.LevelOverReason.PatientInfected ? "Kill" : "Die");
-		collider2D.enabled = false;
+		GetComponent<Collider2D>().enabled = false;
         treated = true;
     }
 

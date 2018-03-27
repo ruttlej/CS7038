@@ -135,13 +135,13 @@ public class HandController : MonoBehaviour
 		activeHand = this;
 //		GameWorld.score = 0;
         GroupManager.main.group["Running"].Add(this);
-        stars = (GameObject.Instantiate(cleanParticles) as GameObject).particleSystem;
+        stars = (GameObject.Instantiate(cleanParticles) as GameObject).GetComponent<ParticleSystem>();
         stars.transform.parent = transform.parent;
-        stars.renderer.sortingOrder = short.MaxValue;
+        stars.GetComponent<Renderer>().sortingOrder = short.MaxValue;
 
-        infection = (GameObject.Instantiate(infectionParticles) as GameObject).particleSystem;
+        infection = (GameObject.Instantiate(infectionParticles) as GameObject).GetComponent<ParticleSystem>();
         infection.transform.parent = transform.parent;
-        infection.renderer.sortingOrder = short.MaxValue;
+        infection.GetComponent<Renderer>().sortingOrder = short.MaxValue;
     }
 
     bool resuming;

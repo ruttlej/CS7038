@@ -19,7 +19,7 @@ public class Ashes : MonoBehaviour
 		_ashTransform = transform;
 		_smokeTransform = _smoke.transform;
 		//t.position = t.position + new Vector3(0, 0.45f, 0);
-		_smoke.renderer.sortingOrder += 2;
+		_smoke.GetComponent<Renderer>().sortingOrder += 2;
 		_smoke.SetActive(false);
 		_smokeTransform.parent = transform;
 		GroupManager.main.group["Running"].Add(animator);

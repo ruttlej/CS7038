@@ -6,7 +6,7 @@ public class HeatPad : MonoBehaviour
 	private Material _cached;
 
 	void Start() {
-		renderer.material = _cached = AssetHelper.instance.HeatMaterial;
+		GetComponent<Renderer>().material = _cached = AssetHelper.instance.HeatMaterial;
 	}
 
 	void LateUpdate() {

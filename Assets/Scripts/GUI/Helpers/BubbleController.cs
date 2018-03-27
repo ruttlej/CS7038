@@ -46,7 +46,7 @@ public class BubbleController : MonoBehaviour
 			_bubbles = GameObject.Instantiate(bubblePrefab) as ParticleSystem;
 			_bubbles.transform.parent = gameObject.transform;
 
-			_bubbles.renderer.sortingOrder = short.MaxValue;
+			_bubbles.GetComponent<Renderer>().sortingOrder = short.MaxValue;
 
 			ResetParticles();
 		}

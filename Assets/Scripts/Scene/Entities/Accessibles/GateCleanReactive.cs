@@ -32,7 +32,7 @@ public class GateCleanReactive : Accessible {
 
     public void UpdateOpenState()
     {
-        collider2D.enabled = !open;
+        GetComponent<Collider2D>().enabled = !open;
 
         spriteRenderer.sprite = open ? GateOpen : GateClosed;
     }

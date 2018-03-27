@@ -31,9 +31,11 @@ public class PackerPolicy1024 : IPackerPolicy
 		{
 			TextureImporter ti = EditorUtility.InstanceIDToObject(instanceID) as TextureImporter;
 			
-			TextureImportInstructions ins = new TextureImportInstructions();
-			ti.ReadTextureImportInstructions(ins, target);
-			
+            TextureFormat desiredFromat;
+            ColorSpace colorSapce;
+            int compressionQuality;
+            ti.ReadTextureImportInstructions(target, out desiredFromat, out colorSapce, out compressionQuality);
+
 			TextureImporterSettings tis = new TextureImporterSettings();
 			ti.ReadTextureSettings(tis);
 			
@@ -42,10 +44,9 @@ public class PackerPolicy1024 : IPackerPolicy
 			{
 				Entry entry = new Entry();
 				entry.sprite = sprite;
-				entry.settings.format = ins.desiredFormat;
-				entry.settings.usageMode = ins.usageMode;
-				entry.settings.colorSpace = ins.colorSpace;
-				entry.settings.compressionQuality = ins.compressionQuality;
+				entry.settings.format = desiredFromat;
+				entry.settings.colorSpace = colorSapce;
+				entry.settings.compressionQuality = compressionQuality;
 				entry.settings.filterMode = Enum.IsDefined(typeof(FilterMode), ti.filterMode) ? ti.filterMode : FilterMode.Bilinear;
 				entry.settings.maxWidth = 1024;
 				entry.settings.maxHeight = 1024;

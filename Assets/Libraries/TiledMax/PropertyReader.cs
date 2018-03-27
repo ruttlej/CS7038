@@ -52,16 +52,19 @@ public class PropertyReader : IEnumerable<KeyValuePair<string, string>>
 	
 	public bool GetInt(string name, out int value) {
 		string strVal;
+        value = 0;
 		return (_data.TryGetValue(name, out strVal) && int.TryParse(strVal, out value));
 	}
 
 	public bool GetFloat(string name, out float value) {
 		string strVal;
+        value = 0;
 		return (_data.TryGetValue(name, out strVal) && float.TryParse(strVal, out value));
 	}
 
 	public bool GetBoolean(string name, out bool value) {
 		string strVal;
+        value = false;
 		return (_data.TryGetValue(name, out strVal) && bool.TryParse(strVal, out value));
 	}
 

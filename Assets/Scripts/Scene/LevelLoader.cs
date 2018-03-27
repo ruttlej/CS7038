@@ -242,7 +242,7 @@ public class LevelLoader
 				//    break;
 					case TileType.HeatPad:
 						parent = accessibleContainer;
-						transform.renderer.sortingOrder = FloorOrder + 2;
+						transform.GetComponent<Renderer>().sortingOrder = FloorOrder + 2;
 						floorData[indexX, indexY] = LevelSettings.FloorType.HeatPad;
 						data[tile.X, tile.Y].FloorType = LevelSettings.FloorType.HeatPad;
 						break;
@@ -311,7 +311,7 @@ public class LevelLoader
 						break;
 
 					case TileType.Gate1Open:
-						transform.renderer.sortingOrder = PlaceWall(transform.position.y) + UsableOffset;
+						transform.GetComponent<Renderer>().sortingOrder = PlaceWall(transform.position.y) + UsableOffset;
 						goto case TileType.Gate1VerticalOpen;
 					case TileType.Gate1VerticalOpen:
 						parent = accessibleContainer;
@@ -323,7 +323,7 @@ public class LevelLoader
 						type1 = 1;
 						break;
 					case TileType.Gate2Open:
-						transform.renderer.sortingOrder = PlaceWall(transform.position.y) + UsableOffset;
+						transform.GetComponent<Renderer>().sortingOrder = PlaceWall(transform.position.y) + UsableOffset;
 						goto case TileType.Gate2VerticalOpen;
 					case TileType.Gate2VerticalOpen:
 						parent = accessibleContainer;
@@ -383,12 +383,12 @@ public class LevelLoader
 						break;
 					case TileType.Terminal:
 						parent = accessibleContainer;
-						transform.renderer.sortingOrder = PlaceWall(transform.position.y) + 1;
+						transform.GetComponent<Renderer>().sortingOrder = PlaceWall(transform.position.y) + 1;
 						break;
 					case TileType.Floor:
 						parent = floorContainer;
 						transform.GetComponent<SpriteRenderer>().sortingOrder = FloorOrder;
-						var blenderer = gameObj.renderer as SpriteRenderer;
+						var blenderer = gameObj.GetComponent<Renderer>() as SpriteRenderer;
 						float brighter = ((float)random.NextDouble() - 0.5f) * 0.02f;
 						blenderer.color = new Color(
 							blenderer.color.r + (float)(random.NextDouble() * 0) + brighter,
@@ -444,13 +444,13 @@ public class LevelLoader
 		}
 		for (y = map.Height-1; y >= 0; --y) {
 			if (data[maxWall, y].Wall != null) {
-				(data[maxWall, y].Wall.renderer as SpriteRenderer).sprite = AssetHelper.instance.SureWall;
+				(data[maxWall, y].Wall.GetComponent<Renderer>() as SpriteRenderer).sprite = AssetHelper.instance.SureWall;
 				break;
 			}
 		}
 
 		if (data[playerX, playerY].Floor != null) {
-			(data[playerX, playerY].Floor.renderer as SpriteRenderer).sprite = AssetHelper.instance.SureFloor;
+			(data[playerX, playerY].Floor.GetComponent<Renderer>() as SpriteRenderer).sprite = AssetHelper.instance.SureFloor;
 		}
 
 		if (type1 + type2 + type3 == 1) {
@@ -466,7 +466,7 @@ public class LevelLoader
 			for (y = 0; y < map.Height; ++y) {
 				switch (data[x, y].FloorType) {
 					case LevelSettings.FloorType.HeatPad:
-						var frend = data[x, y].Floor.renderer as SpriteRenderer;
+						var frend = data[x, y].Floor.GetComponent<Renderer>() as SpriteRenderer;
 						frend.color = new Color(
 							frend.color.r - 0.2f, frend.color.g - 0.2f, frend.color.b - 0.2f);
 						break;
@@ -477,24 +477,24 @@ public class LevelLoader
 		#region Make Gradients
 		for (int i = 0; i < map.Height; ++i) {
 			var shadeLeft = makeGradient(map, -1, i);
-			shadeLeft.renderer.material = shadeLeft.left;
+			shadeLeft.GetComponent<Renderer>().material = shadeLeft.left;
 			var shadeRight = makeGradient(map, map.Width, i);
-			shadeRight.renderer.material = shadeRight.right;
+			shadeRight.GetComponent<Renderer>().material = shadeRight.right;
 		}
 		for (int j = 0; j < map.Width; ++j) {
 			var shadeTop = makeGradient(map, j, -1);
-			shadeTop.renderer.material = shadeTop.top;
+			shadeTop.GetComponent<Renderer>().material = shadeTop.top;
 			var shadeBot = makeGradient(map, j, map.Height);
-			shadeBot.renderer.material = shadeBot.bottom;
+			shadeBot.GetComponent<Renderer>().material = shadeBot.bottom;
 		}
 		var shadeTL = makeGradient(map, -1, -1);
-		shadeTL.renderer.material = shadeTL.topLeft;
+		shadeTL.GetComponent<Renderer>().material = shadeTL.topLeft;
 		var shadeTR = makeGradient(map, map.Width, -1);
-		shadeTR.renderer.material = shadeTR.topRight;
+		shadeTR.GetComponent<Renderer>().material = shadeTR.topRight;
 		var shadeBL = makeGradient(map, -1, map.Height);
-		shadeBL.renderer.material = shadeBL.bottomLeft;
+		shadeBL.GetComponent<Renderer>().material = shadeBL.bottomLeft;
 		var shadeBR = makeGradient(map, map.Width, map.Height);
-		shadeBR.renderer.material = shadeBR.bottomRight;
+		shadeBR.GetComponent<Renderer>().material = shadeBR.bottomRight;
 		#endregion
 
 		foreach (var obj in map.Objects) {

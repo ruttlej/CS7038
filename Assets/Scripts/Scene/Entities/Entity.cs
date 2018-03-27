@@ -15,7 +15,7 @@ public class Entity : MonoBehaviour
 		Transform t = original.transform;
 		var obj = Object.Instantiate(
 			newObject, t.position, t.rotation) as GameObject;
-		obj.GetComponent<SpriteRenderer>().sortingOrder = original.renderer.sortingOrder;
+		obj.GetComponent<SpriteRenderer>().sortingOrder = original.GetComponent<Renderer>().sortingOrder;
 		obj.transform.parent = t.parent;
 		return obj;
 	}

@@ -84,7 +84,7 @@ public class LaserTurret : Entity
 				return;
 			}
 
-			AddHit(new LaserHit(hit.point, hit.collider.gameObject.renderer.sortingOrder - 1));
+			AddHit(new LaserHit(hit.point, hit.collider.gameObject.GetComponent<Renderer>().sortingOrder - 1));
 
 			//if (dirVec.y > 0) { 
 			//	AddHit(new LaserHit(hit.point + height, hit.collider.gameObject.renderer.sortingOrder + 1));

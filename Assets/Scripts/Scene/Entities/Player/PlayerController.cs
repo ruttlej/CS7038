@@ -372,17 +372,17 @@ public class PlayerController : MonoBehaviour, IPan
             animator.SetInteger("State", (int)animState);
         }
         IsAlive = true;
-        this.collider2D.enabled = true;
+        this.GetComponent<Collider2D>().enabled = true;
     }
 
     public void Die(GameWorld.LevelOverReason reason = GameWorld.LevelOverReason.LaserKilledPlayer)
     {
         IsAlive = false;
-        this.collider2D.enabled = false;
+        this.GetComponent<Collider2D>().enabled = false;
 
         if (reason == GameWorld.LevelOverReason.Squashed)
         {
-            renderer.enabled = false;
+            GetComponent<Renderer>().enabled = false;
             animator.enabled = false;
             transform.localScale = new Vector3(
                 transform.localScale.x * 0.1f,

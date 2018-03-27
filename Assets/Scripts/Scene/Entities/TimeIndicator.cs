@@ -7,7 +7,7 @@ public class TimeIndicator : MonoBehaviour
 
 	void Awake()
 	{
-		spriteRenderer = renderer as SpriteRenderer;
+		spriteRenderer = GetComponent<Renderer>() as SpriteRenderer;
 	}
 
 	public delegate float ValueReceiver();
