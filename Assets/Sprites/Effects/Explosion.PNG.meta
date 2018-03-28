@@ -1,12 +1,35 @@
 fileFormatVersion: 2
 guid: 328dc2df16eb1e8488250069d616ab4f
 TextureImporter:
-  serializedVersion: 2
+  fileIDToRecycleName:
+    21300000: explosion 1_0
+    21300002: explosion 1_1
+    21300004: explosion 1_2
+    21300006: explosion 1_3
+    21300008: explosion 1_4
+    21300010: explosion 1_5
+    21300012: explosion 1_6
+    21300014: explosion 1_7
+    21300016: explosion 1_8
+    21300018: explosion 1_9
+    21300020: explosion 1_10
+    21300022: explosion 1_11
+    21300024: explosion 1_12
+    21300026: explosion 1_13
+    21300028: explosion 1_14
+    21300030: explosion 1_15
+    21300032: explosion 1_16
+    21300034: explosion 1_17
+    21300036: explosion 1_18
+    21300038: explosion 1_19
+    21300040: explosion 1_20
+    21300042: explosion 1_21
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
     mipMapFadeDistanceStart: 1
@@ -14,11 +37,12 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 1024
@@ -34,15 +58,31 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 70
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: explosion 1_0
+    - serializedVersion: 2
+      name: explosion 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -52,7 +92,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion 1_1
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: explosion 1_1
       rect:
         serializedVersion: 2
         x: 120
@@ -62,7 +105,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion 1_2
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: explosion 1_2
       rect:
         serializedVersion: 2
         x: 240
@@ -72,7 +118,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion 1_3
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: explosion 1_3
       rect:
         serializedVersion: 2
         x: 360
@@ -82,7 +131,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion 1_4
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: explosion 1_4
       rect:
         serializedVersion: 2
         x: 480
@@ -92,7 +144,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion 1_5
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: explosion 1_5
       rect:
         serializedVersion: 2
         x: 600
@@ -102,7 +157,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion 1_6
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: explosion 1_6
       rect:
         serializedVersion: 2
         x: 0
@@ -112,7 +170,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion 1_7
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: explosion 1_7
       rect:
         serializedVersion: 2
         x: 120
@@ -122,7 +183,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion 1_8
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: explosion 1_8
       rect:
         serializedVersion: 2
         x: 240
@@ -132,7 +196,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion 1_9
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: explosion 1_9
       rect:
         serializedVersion: 2
         x: 360
@@ -142,7 +209,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion 1_10
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: explosion 1_10
       rect:
         serializedVersion: 2
         x: 480
@@ -152,7 +222,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion 1_11
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: explosion 1_11
       rect:
         serializedVersion: 2
         x: 600
@@ -162,7 +235,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion 1_12
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: explosion 1_12
       rect:
         serializedVersion: 2
         x: 0
@@ -172,7 +248,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion 1_13
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: explosion 1_13
       rect:
         serializedVersion: 2
         x: 120
@@ -182,7 +261,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion 1_14
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: explosion 1_14
       rect:
         serializedVersion: 2
         x: 240
@@ -192,7 +274,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion 1_15
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: explosion 1_15
       rect:
         serializedVersion: 2
         x: 360
@@ -202,7 +287,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion 1_16
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: explosion 1_16
       rect:
         serializedVersion: 2
         x: 480
@@ -212,7 +300,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion 1_17
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: explosion 1_17
       rect:
         serializedVersion: 2
         x: 600
@@ -222,7 +313,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion 1_18
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: explosion 1_18
       rect:
         serializedVersion: 2
         x: 0
@@ -232,7 +326,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion 1_19
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: explosion 1_19
       rect:
         serializedVersion: 2
         x: 120
@@ -242,7 +339,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion 1_20
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: explosion 1_20
       rect:
         serializedVersion: 2
         x: 240
@@ -252,7 +352,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: explosion 1_21
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: explosion 1_21
       rect:
         serializedVersion: 2
         x: 360
@@ -262,5 +365,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
   spritePackingTag: Effects
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

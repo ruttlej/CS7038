@@ -1,12 +1,44 @@
 fileFormatVersion: 2
 guid: 067ca772cbf67304cb099db3b3740f1a
 TextureImporter:
-  serializedVersion: 2
+  fileIDToRecycleName:
+    21300000: smoke_0
+    21300002: smoke_1
+    21300004: smoke_2
+    21300006: smoke_3
+    21300008: smoke_4
+    21300010: smoke_5
+    21300012: smoke_6
+    21300014: smoke_7
+    21300016: smoke_8
+    21300018: smoke_9
+    21300020: smoke_10
+    21300022: smoke_11
+    21300024: smoke_12
+    21300026: smoke_13
+    21300028: smoke_14
+    21300030: smoke_15
+    21300032: smoke_16
+    21300034: smoke_17
+    21300036: smoke_18
+    21300038: smoke_19
+    21300040: smoke_20
+    21300042: smoke_21
+    21300044: smoke_22
+    21300046: smoke_23
+    21300048: smoke_24
+    21300050: smoke_25
+    21300052: smoke_26
+    21300054: smoke_27
+    21300056: smoke_28
+    21300058: smoke_29
+    21300060: smoke_30
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
     mipMapFadeDistanceStart: 1
@@ -14,11 +46,12 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 1024
@@ -34,15 +67,31 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 88
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: smoke_0
+    - serializedVersion: 2
+      name: smoke_0
       rect:
         serializedVersion: 2
         x: 0
@@ -52,7 +101,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_1
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_1
       rect:
         serializedVersion: 2
         x: 120
@@ -62,7 +114,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_2
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_2
       rect:
         serializedVersion: 2
         x: 240
@@ -72,7 +127,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_3
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_3
       rect:
         serializedVersion: 2
         x: 360
@@ -82,7 +140,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_4
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_4
       rect:
         serializedVersion: 2
         x: 480
@@ -92,7 +153,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_5
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_5
       rect:
         serializedVersion: 2
         x: 600
@@ -102,7 +166,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_6
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_6
       rect:
         serializedVersion: 2
         x: 720
@@ -112,7 +179,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_7
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_7
       rect:
         serializedVersion: 2
         x: 840
@@ -122,7 +192,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_8
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_8
       rect:
         serializedVersion: 2
         x: 0
@@ -132,7 +205,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_9
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_9
       rect:
         serializedVersion: 2
         x: 120
@@ -142,7 +218,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_10
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_10
       rect:
         serializedVersion: 2
         x: 240
@@ -152,7 +231,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_11
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_11
       rect:
         serializedVersion: 2
         x: 360
@@ -162,7 +244,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_12
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_12
       rect:
         serializedVersion: 2
         x: 480
@@ -172,7 +257,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_13
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_13
       rect:
         serializedVersion: 2
         x: 600
@@ -182,7 +270,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_14
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_14
       rect:
         serializedVersion: 2
         x: 720
@@ -192,7 +283,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_15
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_15
       rect:
         serializedVersion: 2
         x: 840
@@ -202,7 +296,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_16
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_16
       rect:
         serializedVersion: 2
         x: 0
@@ -212,7 +309,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_17
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_17
       rect:
         serializedVersion: 2
         x: 120
@@ -222,7 +322,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_18
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_18
       rect:
         serializedVersion: 2
         x: 240
@@ -232,7 +335,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_19
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_19
       rect:
         serializedVersion: 2
         x: 360
@@ -242,7 +348,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_20
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_20
       rect:
         serializedVersion: 2
         x: 480
@@ -252,7 +361,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_21
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_21
       rect:
         serializedVersion: 2
         x: 600
@@ -262,7 +374,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_22
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_22
       rect:
         serializedVersion: 2
         x: 720
@@ -272,7 +387,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_23
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_23
       rect:
         serializedVersion: 2
         x: 840
@@ -282,7 +400,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_24
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_24
       rect:
         serializedVersion: 2
         x: 0
@@ -292,7 +413,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_25
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_25
       rect:
         serializedVersion: 2
         x: 120
@@ -302,7 +426,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_26
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_26
       rect:
         serializedVersion: 2
         x: 240
@@ -312,7 +439,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_27
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_27
       rect:
         serializedVersion: 2
         x: 360
@@ -322,7 +452,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_28
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_28
       rect:
         serializedVersion: 2
         x: 480
@@ -332,7 +465,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_29
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_29
       rect:
         serializedVersion: 2
         x: 600
@@ -342,7 +478,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: smoke_30
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: smoke_30
       rect:
         serializedVersion: 2
         x: 720
@@ -352,5 +491,10 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
   spritePackingTag: Effects
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

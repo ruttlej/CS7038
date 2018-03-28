@@ -1,12 +1,29 @@
 fileFormatVersion: 2
 guid: 4ac415568a8dcc74eb03cbd4caf7709d
 TextureImporter:
-  serializedVersion: 2
+  fileIDToRecycleName:
+    21300000: handrew_death_2_0
+    21300002: handrew_death_2_1
+    21300004: handrew_death_2_2
+    21300006: handrew_death_2_3
+    21300008: handrew_death_2_4
+    21300010: handrew_death_2_5
+    21300012: handrew_death_2_6
+    21300014: handrew_death_2_7
+    21300016: handrew_death_2_8
+    21300018: handrew_death_2_9
+    21300020: handrew_death_2_10
+    21300022: handrew_death_2_11
+    21300024: handrew_death_2_12
+    21300026: handrew_death_2_13
+    21300028: handrew_death_2_14
+    21300030: handrew_death_2_15
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
-    correctGamma: 0
     fadeOut: 0
     borderMipMap: 0
     mipMapFadeDistanceStart: 1
@@ -14,11 +31,12 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
-  generateCubemap: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
   seamlessCubemap: 0
   textureFormat: -3
   maxTextureSize: 1024
@@ -34,14 +52,31 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 88
+  alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
-  buildTargetSettings: []
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: handrew_death_2_0
+    - serializedVersion: 2
+      name: handrew_death_2_0
       rect:
         serializedVersion: 2
         x: 0
@@ -50,7 +85,11 @@ TextureImporter:
         height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: handrew_death_2_1
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: handrew_death_2_1
       rect:
         serializedVersion: 2
         x: 240
@@ -59,7 +98,11 @@ TextureImporter:
         height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: handrew_death_2_2
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: handrew_death_2_2
       rect:
         serializedVersion: 2
         x: 480
@@ -68,7 +111,11 @@ TextureImporter:
         height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: handrew_death_2_3
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: handrew_death_2_3
       rect:
         serializedVersion: 2
         x: 720
@@ -77,7 +124,11 @@ TextureImporter:
         height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: handrew_death_2_4
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: handrew_death_2_4
       rect:
         serializedVersion: 2
         x: 0
@@ -86,7 +137,11 @@ TextureImporter:
         height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: handrew_death_2_5
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: handrew_death_2_5
       rect:
         serializedVersion: 2
         x: 240
@@ -95,7 +150,11 @@ TextureImporter:
         height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: handrew_death_2_6
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: handrew_death_2_6
       rect:
         serializedVersion: 2
         x: 480
@@ -104,7 +163,11 @@ TextureImporter:
         height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: handrew_death_2_7
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: handrew_death_2_7
       rect:
         serializedVersion: 2
         x: 720
@@ -113,7 +176,11 @@ TextureImporter:
         height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: handrew_death_2_8
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: handrew_death_2_8
       rect:
         serializedVersion: 2
         x: 0
@@ -122,7 +189,11 @@ TextureImporter:
         height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: handrew_death_2_9
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: handrew_death_2_9
       rect:
         serializedVersion: 2
         x: 240
@@ -131,7 +202,11 @@ TextureImporter:
         height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: handrew_death_2_10
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: handrew_death_2_10
       rect:
         serializedVersion: 2
         x: 480
@@ -140,7 +215,11 @@ TextureImporter:
         height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: handrew_death_2_11
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: handrew_death_2_11
       rect:
         serializedVersion: 2
         x: 720
@@ -149,7 +228,11 @@ TextureImporter:
         height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: handrew_death_2_12
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: handrew_death_2_12
       rect:
         serializedVersion: 2
         x: 0
@@ -158,7 +241,11 @@ TextureImporter:
         height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: handrew_death_2_13
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: handrew_death_2_13
       rect:
         serializedVersion: 2
         x: 240
@@ -167,7 +254,11 @@ TextureImporter:
         height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: handrew_death_2_14
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: handrew_death_2_14
       rect:
         serializedVersion: 2
         x: 480
@@ -176,7 +267,11 @@ TextureImporter:
         height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: handrew_death_2_15
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: handrew_death_2_15
       rect:
         serializedVersion: 2
         x: 720
@@ -185,5 +280,11 @@ TextureImporter:
         height: 240
       alignment: 0
       pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: -1
+    outline: []
   spritePackingTag: Handrew
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

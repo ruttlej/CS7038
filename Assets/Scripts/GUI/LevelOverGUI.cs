@@ -8,8 +8,6 @@ using LOR = GameWorld.LevelOverReason;
 
 public class LevelOverGUI : MonoBehaviour
 {
-    private FacebookIntegration facebook;
-	private TwitterIntegration twitter;
     
     private float _actualWindowSize;
     private float _actualButtonSize;
@@ -171,28 +169,6 @@ public class LevelOverGUI : MonoBehaviour
 			"Your M.D. status has been revoked."
 		};
 
-        facebookMessages = new Dictionary<GameWorld.LevelOverReason, string>() {
-			{LOR.ExplosionKilledPatient, "I just blew up a patient in #HandyMD!"},
-			{LOR.ExplosionKilledPlayer, "I just got blown up in #HandyMD!"},
-			{LOR.LaserKilledPatient, "I just disintegrated a patient with a laser in #HandyMD!"},
-			{LOR.LaserKilledPlayer, "I was disintegrated by a laser in #HandyMD!"},
-			{LOR.PatientInfected, "I am a horrible doctor, because I just treated a patient with filthy hands in #HandyMD!"},
-			{LOR.PlayerInfected, "I died painfully in #HandyMD because I neglected to wash my hands!"},
-			{LOR.Squashed, "I was squashed by a heavy door in #HandyMD!"},
-			//{LOR.Success, "I successfully finished a level in #HandyMD!},
-		};
-
-        twitterMessages = new Dictionary<GameWorld.LevelOverReason, string>() {
-			{LOR.ExplosionKilledPatient, "I just blew up a patient in @HandyMD!"},
-			{LOR.ExplosionKilledPlayer, "I just got blown up in @HandyMD!"},
-			{LOR.LaserKilledPatient, "I just disintegrated a patient with a laser in @HandyMD!"},
-			{LOR.LaserKilledPlayer, "I was disintegrated by a laser in @HandyMD!"},
-			{LOR.PatientInfected, "I am a horrible doctor, because I just treated a patient with filthy hands in @HandyMD!"},
-			{LOR.PlayerInfected, "I died painfully in @HandyMD because I neglected to wash my hands!"},
-			{LOR.Squashed, "I was squashed by a heavy door in @HandyMD!"},
-			//{LOR.Success, "I successfully finished a level in @HandyMD!},
-		};
-
 		overTitleSet[GameWorld.LevelOverReason.Undefined] = new[]
 		{
 			"Impossible!"
@@ -225,9 +201,6 @@ public class LevelOverGUI : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        facebook = FindObjectOfType<FacebookIntegration>();
-		twitter = FindObjectOfType<TwitterIntegration> ();
-
         GroupManager.main.group["Level Over"].Add(this);
         GroupManager.main.group["Level Over"].Add(this, new GroupDelegator(null, Enter, null));
         ResetSize();
@@ -446,33 +419,7 @@ public class LevelOverGUI : MonoBehaviour
     }
 
 	void DoSocialWindow(int windowID) {
-		GUILayout.BeginVertical();
-		{
-            string url = "http://www.surewash.com/handymd"; 
 
-			if (GUILayout.Button("Twitter", GUIManager.Style.twitter, GUILayout.Width(_actualSocialSize), GUILayout.Height(_actualSocialSize)))
-			{
-				if (GameWorld.success) {
-					ShareToTwitter(
-						"I just finished level " + (LevelManager.instance.Level + 1).ToString() + " with " +
-						currentScore.ToString() + " star" + ((currentScore == 1) ? "" : "s") + " in @HandyMD!", url);
-				} else {
-					ShareToTwitter(twitterMessages[GameWorld.levelOverReason], url);
-				}
-			}
-			GUILayout.FlexibleSpace();
-			if (GUILayout.Button("Facebook", GUIManager.Style.facebook, GUILayout.Width(_actualSocialSize), GUILayout.Height(_actualSocialSize)))
-			{
-				if (GameWorld.success) {
-					ShareToFacebook(
-						"I just finished level " + (LevelManager.instance.Level + 1).ToString() + " with " +
-						currentScore.ToString() + " star" + ((currentScore == 1) ? "" : "s") + " in #HandyMD!", url);
-				} else {
-					ShareToFacebook(facebookMessages[GameWorld.levelOverReason], url);
-				}
-			}
-		}
-		GUILayout.EndVertical();
 	}
 
     void FadeToMainMenu()
@@ -492,32 +439,5 @@ public class LevelOverGUI : MonoBehaviour
             });
         });
     }
-
-    void ShareToTwitter(string textToDisplay, string urlToDisplay)
-	{
-		#if UNITY_IPHONE || UNITY_ANDROID
-			twitter.Post(textToDisplay, urlToDisplay);
-		#else 
-			string url = "http://twitter.com/intent/tweet?text=" + WWW.EscapeURL(textToDisplay) + "&amp;url=" + WWW.EscapeURL(urlToDisplay) + "&amp;lang=en";
-			string name = "Share on Twitter";
-			
-			Application.ExternalEval("window.open('" + url + "','" + name + "')");
-
-			//Application.OpenURL("http://twitter.com/intent/tweet?text=" + WWW.EscapeURL(textToDisplay) + "&amp;url=" + WWW.EscapeURL(urlToDisplay) + "&amp;lang=en");
-		#endif
-    }
-
-    void ShareToFacebook(string textToDisplay, string urlToDisplay)
-    {  
-		#if UNITY_IPHONE || UNITY_ANDROID
-			facebook.Post (textToDisplay, urlToDisplay);	   		
-		#else
-			string url = "http://www.facebook.com/sharer/sharer.php?u=" + WWW.EscapeURL(urlToDisplay) + "&t=" + WWW.EscapeURL(textToDisplay);
-			string name = "Share on Facebook";
-			
-			Application.ExternalEval("window.open('" + url + "','" + name + "')");
-
-			//Application.OpenURL("http://www.facebook.com/sharer/sharer.php?u=" + WWW.EscapeURL(urlToDisplay) + "&t=" + WWW.EscapeURL(textToDisplay));  
-		#endif    
-	}
+		
 }
