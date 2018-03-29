@@ -55,7 +55,7 @@ public class GameWorld : MonoBehaviour
 
         //Application.LoadLevel("MainMenu");
 
-        StartCoroutine(APIManager.Auth("anonymous.user@surewash.com", "27L7X2"));
+        StartCoroutine(APIManager.PostHandyMDOpened());
 
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
         AudioListener.volume = PlayerPrefs.GetFloat("Audio Volume", 1.0f);

@@ -117,6 +117,8 @@ public class APIManager
         formData.Add("Passed", passed.ToString());
         formData.Add("StartTime", startTime.ToString("o"));
         formData.Add("EndTime", endTime.ToString("o"));
+        formData.Add("StartUTCTime", startTime.ToString("o"));
+        formData.Add("EndUTCTime", endTime.ToString("o"));
         formData.Add("Level", level);
         formData.Add("Score", score.ToString());
         formData.Add("Stars", stars.ToString());
@@ -124,6 +126,18 @@ public class APIManager
         formData.Add("SoftwareVersion", Application.version);
 
         yield return PostData(formData, "ApiHandyMDLevelURL", callback, true);
+    }
+
+    public static IEnumerator PostHandyMDOpened(System.Action<int> callback = null)
+    {
+        Dictionary<string, string> formData = new Dictionary<string, string>();
+
+        formData.Add("DeviceID", SystemInfo.deviceUniqueIdentifier);
+        formData.Add("DeviceType", SystemInfo.deviceUniqueIdentifier);
+        formData.Add("TimeStamp", DateTime.Now.ToString("o"));
+        formData.Add("SoftwareVersion", Application.version);
+
+        yield return PostData(formData, "ApiHandyMDOpenedURL", callback, true);
     }
 
 
@@ -241,6 +255,8 @@ public class APIManager
             if (ApiURL == "ApiLogURL") url = "https://api.surewash.net/api/log/";
             if (ApiURL == "ApiSessionsURL") url = "https://api.surewash.net/api/sessions/";
             if (ApiURL == "ApiGoalCompleteURL") url = "https://api.surewash.net/api/goals/";
+            if (ApiURL == "ApiHandyMDOpenedURL") url = "https://api.surewash.net/api/handymdopened";
+            if (ApiURL == "ApiHandyMDLevelURL") url = "https://api.surewash.net/api/handymdlevel";
         }
 
         if (PlayerPrefs.GetInt("AnonymousLogin", 1) == 1 && UnityEngine.RemoteSettings.GetInt("APISendAnomousData", 0) == 0)
