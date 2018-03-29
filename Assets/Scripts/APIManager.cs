@@ -113,7 +113,7 @@ public class APIManager
         Dictionary<string, string> formData = new Dictionary<string, string>();
 
         formData.Add("DeviceID", SystemInfo.deviceUniqueIdentifier);
-        formData.Add("DeviceType", SystemInfo.deviceUniqueIdentifier);
+        formData.Add("DeviceType", SystemInfo.deviceModel);
         formData.Add("Passed", passed.ToString());
         formData.Add("StartTime", startTime.ToString("o"));
         formData.Add("EndTime", endTime.ToString("o"));
@@ -122,7 +122,7 @@ public class APIManager
         formData.Add("Level", level);
         formData.Add("Score", score.ToString());
         formData.Add("Stars", stars.ToString());
-        formData.Add("LevelOverReason", levelOverReason);
+        formData.Add("ReasonForLevelEnd", levelOverReason);
         formData.Add("SoftwareVersion", Application.version);
 
         yield return PostData(formData, "ApiHandyMDLevelURL", callback, true);
@@ -132,9 +132,12 @@ public class APIManager
     {
         Dictionary<string, string> formData = new Dictionary<string, string>();
 
+        DateTime timeStamp = DateTime.Now;
+
         formData.Add("DeviceID", SystemInfo.deviceUniqueIdentifier);
         formData.Add("DeviceType", SystemInfo.deviceUniqueIdentifier);
-        formData.Add("TimeStamp", DateTime.Now.ToString("o"));
+        formData.Add("TimestampLocal", timeStamp.ToString("yyyy-MM-dd HH:mm:ss.ffffff"));
+        formData.Add("TimestampUTC", timeStamp.ToString("o"));
         formData.Add("SoftwareVersion", Application.version);
 
         yield return PostData(formData, "ApiHandyMDOpenedURL", callback, true);
