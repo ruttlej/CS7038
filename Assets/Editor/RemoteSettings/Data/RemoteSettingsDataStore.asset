@@ -11,4 +11,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0e893c667724814cbbae306609c3635, type: 3}
   m_Name: RemoteSettingsDataStore
   m_EditorClassIdentifier: 
-  rsKeyList: []
+  rsKeyList:
+  - key: ApiHandyMDOpenedURL
+    value: https://api.surewash.net/api/handymdopened
+    type: string
+  - key: ApiHandyMDLevelURL
+    value: https://api.surewash.net/api/handymdlevel
+    type: string
+  - key: APISendAnomousData
+    value: 1
+    type: int
+  - key: ApiAuthURL
+    value: https://api.surewash.net/api/auth/login/
+    type: string
+  - key: ApiTimeOutSeconds
+    value: 3
+    type: int
+  - key: ApiSettingsURL
+    value: https://api.surewash.net/api/settings/
+    type: string
+  - key: ApiLogURL
+    value: https://api.surewash.net/api/log/
+    type: string
