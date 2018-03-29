@@ -382,10 +382,14 @@ public class LevelOverGUI : MonoBehaviour
 
 		visibleScore = 0;
 
+        int tempScore = 0;
+
 		if (GameWorld.success) {
 			starTimer.Reset();
 			int score = UnityEngine.Object.FindObjectOfType<HandController>().score;
-			int min = LevelManager.instance.settings.minScore;
+            tempScore = score;
+
+            int min = LevelManager.instance.settings.minScore;
 			int max = LevelManager.instance.settings.maxScore;
 			if (min == 0 || score <= min) {
 				currentScore = 3;
@@ -399,6 +403,10 @@ public class LevelOverGUI : MonoBehaviour
 		} else {
 			currentScore = 0;
 		}
+
+        string level = "Level " + (LevelManager.instance.Level + 1).ToString();
+
+        StartCoroutine(APIManager.PostHandyMDLevel(GameWorld.success, GameWorld.startTime, GameWorld.endTime, level, tempScore, currentScore, GameWorld.levelOverReason.ToString()));
     }
 
 	void GoToNextLevel() {

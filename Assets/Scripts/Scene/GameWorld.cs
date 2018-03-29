@@ -1,5 +1,6 @@
 using UnityEngine;
 using Grouping;
+using System;
 
 public class GameWorld : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class GameWorld : MonoBehaviour
         get { return levelOverReason == LevelOverReason.Success; }
         set { levelOverReason = value ? LevelOverReason.Success : LevelOverReason.Undefined; }
     }
+
+    public static DateTime startTime;
+    public static DateTime endTime;
 
     //public static bool 
 
@@ -46,7 +50,12 @@ public class GameWorld : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        startTime = DateTime.Now;
+        endTime = DateTime.Now;
+
         //Application.LoadLevel("MainMenu");
+
+        StartCoroutine(APIManager.Auth("anonymous.user@surewash.com", "27L7X2"));
 
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
         AudioListener.volume = PlayerPrefs.GetFloat("Audio Volume", 1.0f);
@@ -104,6 +113,7 @@ public class GameWorld : MonoBehaviour
 
     void ToLevelOver()
     {
+        endTime = DateTime.Now;
         GroupManager.main.activeGroup = GroupManager.main.group["To Level Over"];
     }
 
@@ -179,6 +189,7 @@ public class GameWorld : MonoBehaviour
 
     void LevelStart()
     {
+        startTime = DateTime.Now;
         // Clear resources
 
         var instance = LevelManager.instance;
