@@ -115,8 +115,8 @@ public class APIManager
         formData.Add("DeviceID", SystemInfo.deviceUniqueIdentifier);
         formData.Add("DeviceType", SystemInfo.deviceModel);
         formData.Add("Passed", passed.ToString());
-        formData.Add("StartTime", startTime.ToString("o"));
-        formData.Add("EndTime", endTime.ToString("o"));
+        formData.Add("StartTime", startTime.ToString("yyyy-MM-dd HH:mm:ss.ffffff"));
+        formData.Add("EndTime", endTime.ToString("yyyy-MM-dd HH:mm:ss.ffffff"));
         formData.Add("StartUTCTime", startTime.ToString("o"));
         formData.Add("EndUTCTime", endTime.ToString("o"));
         formData.Add("Level", level);
@@ -135,7 +135,7 @@ public class APIManager
         DateTime timeStamp = DateTime.Now;
 
         formData.Add("DeviceID", SystemInfo.deviceUniqueIdentifier);
-        formData.Add("DeviceType", SystemInfo.deviceUniqueIdentifier);
+        formData.Add("DeviceType", SystemInfo.deviceModel);
         formData.Add("TimestampLocal", timeStamp.ToString("yyyy-MM-dd HH:mm:ss.ffffff"));
         formData.Add("TimestampUTC", timeStamp.ToString("o"));
         formData.Add("SoftwareVersion", Application.version);
